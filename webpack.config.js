@@ -1,7 +1,8 @@
 const path = require("path");
 const webpack = require('webpack')
 const htmlPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const config = require("./src/common");
 
 module.exports = {
   entry: './src/App.js',
@@ -10,7 +11,7 @@ module.exports = {
     path: path.resolve(__dirname, 'public')
   },
   devServer: {
-    port: 3333
+    port: config.developmentPort
   },
   plugins: [
     new htmlPlugin({
