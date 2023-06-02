@@ -50,7 +50,7 @@ class App {
   }
 
   constructor() {
-    App.container = document.body;
+    App.container = document.getElementById('App');
     this.header = new Header('header', 'header-container');
   }
 

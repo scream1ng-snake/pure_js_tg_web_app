@@ -73,7 +73,7 @@ body {
   font-weight: 700;
 }
 
-.App {
+#App {
   overflow: hidden;
   margin: 0 auto;
 }
@@ -84,32 +84,32 @@ h3 {
 }
 
 @media screen and (min-width: 300px) {
-  .App { 
+  #App { 
     width: 100vw;
   }
 }
 @media screen and (min-width: 576px) {
-  .App { 
+  #App { 
     width: 95vw;
   }
 }
 @media screen and (min-width: 768px) {
-  .App {
+  #App {
      width: 90vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .App {
+  #App {
      width: 85vw;
   }
 }
 @media screen and (min-width: 1200px) {
-  .App {
+  #App {
      width: 80vw;
   }
 }
 @media screen and (min-width: 1400px) {
-  .App {
+  #App {
      width: 1140px;
   }
 }
