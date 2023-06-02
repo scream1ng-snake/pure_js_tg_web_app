@@ -9,10 +9,10 @@ class App {
   /** контентная часть */
   static container;
 
-  static defaultPage = Routes.MainPage;
+  static currentPage = Routes.MainPage;
 
   static renderPage(toPage) {
-    const currentPageHTML = document.querySelector(`#${App.defaultPage}`);
+    const currentPageHTML = document.querySelector(`#${App.currentPage}`);
     if (currentPageHTML) {
       currentPageHTML.remove();
     }
@@ -33,9 +33,11 @@ class App {
         break;
     }
 
+    App.currentPage = toPage; // todo this
+
     if (page) {
       const pageHTML = page.render();
-      pageHTML.id = App.defaultPage;
+      pageHTML.id = App.currentPage;
       App.container.append(pageHTML);
     }
   }
