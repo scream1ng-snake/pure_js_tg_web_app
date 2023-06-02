@@ -69,6 +69,8 @@ img {
 
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .App {
